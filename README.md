@@ -4,7 +4,7 @@
 I originally created this project for an assignment (aka challenge) in my Web Development II class in November of 2021. The instructions for this challenge included the following as the main goal:
 > "Design and develop a web scraper that will crawl and scrape data from a website, that will allow such actions, while crawling and scraping multiple pages from that site."
 > 
-We had one week to complete this project, so I priortized functionality over aesthetic. However, after completing the class, I returned to the project to add some additional styling - creating a much more interesting and unique application.  
+We had one week to complete this project, so I priortized functionality over aesthetic. However, after completing the class, I returned to the project to add some additional styling - creating a much more interesting and unique application. To do this, I created my own tomato image in Figma and used this for the background. I also used Bootstrap for the form and table formatting. Lastly, I incorporated an interesting font and added some other minor styling details.
 
 ### Link To Running Code:
 https://www.clairehughey.me/past-projects/rotton-tomatoes-scraper  
