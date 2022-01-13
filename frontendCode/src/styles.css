@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+.backgroundImage {
+  background-image: url("src/assets/images/tomato.png");
+  background-size: 20%;
+}

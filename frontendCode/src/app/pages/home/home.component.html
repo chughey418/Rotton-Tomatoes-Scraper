@@ -1,0 +1,51 @@
+<div class="backgroundImage">
+  <div class="mainStage">
+    <div class="header">
+      <!-- header -->
+      <h5>Rotton Tomatoes's</h5>
+      <h1>Top-Rated Movies</h1>
+      <div class="formWrapper">
+          <!-- form -->
+          <form [formGroup]="genreForm">
+              <select #genre class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" formControlName="genre" name="genre">
+                  <option disabled selected>Select a genre...</option>
+                  <option value="action__adventure">Action & Adventure</option>
+                  <option value="animation">Animation</option>
+                  <option value="classics">Classics</option>
+                  <option value="comedy">Comedy</option>
+                  <option value="documentary">Documentary</option>
+                  <option value="drama">Drama</option>
+                  <option value="horror">Horror</option>
+                  <option value="kids__family">Kids & Family</option>
+                  <option value="musical__performing_arts">Musical & Performing Arts</option>
+                  <option value="mystery__suspense">Mystery & Suspense</option>
+                  <option value="romance">Romance</option>
+                  <option value="science_fiction__fantasy">Science Fiction & Fantasy</option>
+                  <option value="sports__fitness">Sports & Fitness</option>
+                  <option value="western">Western</option>
+                </select>
+                <!-- submit button -->
+                <button (click)="onSubmit(genre.value)" class="btn btn-outline-success" [disabled]="genreForm.invalid">Get Movies</button>
+          </form>
+      </div>
+    </div>
+    
+    <!-- table -->
+    <div class="tableWrapper">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Ranking</th>
+                <th scope="col">Title</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let key of getKeys()">
+                <th scope="row">{{ this.movies[key].rank }}</th>
+                <td>{{ this.movies[key].title }}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+</div>
