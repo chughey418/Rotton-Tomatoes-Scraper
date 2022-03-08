@@ -1,4 +1,4 @@
-# Rotton Tomatoes Scraper 
+# Rotten Tomatoes Scraper 
 
 ### About This Project:
 I originally created this project for an assignment (aka challenge) in my Web Development II class in November of 2021. The instructions for this challenge included the following as the main goal:
@@ -10,9 +10,9 @@ We had one week to complete this project, so I priortized functionality over aes
 https://www.clairehughey.me/past-projects/rotton-tomatoes-scraper  
 
 ### Implementation:
-I decided to scrape Rotton Tomatoes Top 100 movie lists using scrapy. I built my front-end with Angular. The user selects a genre through a form. Once they submit, a php script is called which calls the python scrapy script. The user input is sent via command line to the scrapy project so that the correct url is scraped (each genre's movie list is located on a different page). The scraped information is stored in a Firebase Realtime Database. This information is displayed in the table located underneath the form and is updated whenever the database is updated. 
+I decided to scrape Rotten Tomatoes Top 100 movie lists using scrapy. I built my front-end with Angular. The user selects a genre through a form. Once they submit, a php script is called which calls the python scrapy script. The user input is sent via command line to the scrapy project so that the correct url is scraped (each genre's movie list is located on a different page). The scraped information is stored in a Firebase Realtime Database. This information is displayed in the table located underneath the form and is updated whenever the database is updated. 
 
-I decided to scrape Rotton Tomatoes (https://www.rottentomatoes.com) because I really like the site and often use it to check ratings of movies that I am interested in seeing.  
+I decided to scrape Rotten Tomatoes (https://www.rottentomatoes.com) because I really like the site and often use it to check ratings of movies that I am interested in seeing.  
 
 
 ### How To Run Scraper:
